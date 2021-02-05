@@ -27,6 +27,7 @@ body {
     transition: 0.5s;
     overflow: hidden;
     overflow-y: scroll;
+    z-index: 1;
 }
 
 .navigation:hover {
@@ -115,6 +116,8 @@ header{
 .container-body {
     border: 1px solid black;
     margin-left: 55px;
+    position: relative;
+    overflow: hidden;
 }
 
 .friend-name {
@@ -125,7 +128,7 @@ header{
 
 
 .message-section{
-    height: 89% !important;
+    height: 78vh!important;
     overflow-x: hidden;
     top: 40px;
 }
@@ -146,6 +149,12 @@ header{
      background: #3dec44;
  }
 
+ .chat-control   {
+    height: 8vh;
+    overflow: hidden;
+    padding-top: 5px;
+ }
+
 .control {
     display: flex;
     justify-content: start;
@@ -161,4 +170,5 @@ textarea{
     background-color: #ffffffde;
     color: black;
     font-size: 18px;
+    outline: none;
 }
