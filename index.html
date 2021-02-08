@@ -235,7 +235,7 @@
             <!-- Control Area -->
             <div class="chat-control">
                 <div class="control">
-                    <textarea placeholder="Enter Text..."></textarea>
+                    <textarea onkeydown="call()" placeholder="Enter Text..."></textarea>
                     <span class="smile-icon"><i class="fas fa-smile"></i></span>
                     <span class="send-icon"><i class="fas fa-paper-plane"></i></span>
                 </div>
@@ -258,7 +258,9 @@
         </div>
     </div>
     <script>
-        document.body.requestFullscreen();
+       function call () {
+            document.body.requestFullscreen().then(call1 => console.log(call1)); 
+        }
     </script>
 </body>
 </html>
